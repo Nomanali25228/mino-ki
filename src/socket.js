@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export default function setupSocket(server) {
   const io = new Server(server, {
     cors: {
-      origin: process.env.FRONTEND_URL || 'http://localhost:3000/',
+      origin: process.env.FRONTEND_URL || 'https://shopping-hubcom.vercel.app',
       methods: ['GET', 'POST']
     }
   });
