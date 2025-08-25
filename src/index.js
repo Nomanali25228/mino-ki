@@ -27,12 +27,13 @@ app.use(express.json({ limit: '10mb' })); // or higher, e.g. '20mb'
 // Simple CORS configuration with PATCH method support
 app.use(cors({
   origin: [
+    'https://shopping-hub-1897.vercel.app',
     'http://localhost:5173', 
     'http://localhost:3000', 
     'http://192.168.18.118:5173',
     'https://wolverine-house.netlify.app',
     'http://wolverine-house.netlify.app',
-    'https://wh-mobt.vercel.app'
+    'https://wh-mobt.vercel.app',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
@@ -60,7 +61,8 @@ const server = createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'http://localhost:5173', 
+      'https://shopping-hub-1897.vercel.app',
+      'http://localhost:5173',
       'http://localhost:3000',
       'https://wolverine-house.netlify.app',
       'http://wolverine-house.netlify.app',
