@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "src/index.js": {
-      "memory": 1024,
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -18,5 +18,11 @@
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "src/index.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
   }
 }
