@@ -3,7 +3,7 @@
 
 import fetch from 'node-fetch';
 
-const API_BASE = 'http://backend-shopping-hub-production.up.railway.app';
+const API_BASE = 'http://localhost:5000/api';
 
 const testFAQSystem = async () => {
   console.log('🧪 Testing FAQ System...\n');
