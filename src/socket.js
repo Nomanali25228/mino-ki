@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export default function setupSocket(server) {
   const io = new Server(server, {
     cors: {
-      origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+      origin: process.env.FRONTEND_URL || 'https://shopping-hub-1897.vercel.app',
       methods: ['GET', 'POST']
     }
   });

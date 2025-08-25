@@ -44,14 +44,14 @@ const PORT = process.env.PORT || 5001;
 
 
 // API Routes
-app.use('/api/users', userRoutes);
-app.use('/api/products', productRoutes);
-app.use('/api/auth', authRoutes);
-app.use('/api/chat', chatRoutes);
-app.use('/api/orders', orderRoutes);
-app.use('/api/seller-products', sellerProductRoutes); // Seller product routes
-app.use('/api/faqs', faqRoutes); // FAQ routes
-app.use('/api/deposits', depositRoutes); // Deposit routes
+app.use('/users', userRoutes);
+app.use('/products', productRoutes);
+app.use('/auth', authRoutes);
+app.use('/chat', chatRoutes);
+app.use('/orders', orderRoutes);
+app.use('/seller-products', sellerProductRoutes); // Seller product routes
+app.use('/faqs', faqRoutes); // FAQ routes
+app.use('/deposits', depositRoutes); // Deposit routes
 
 // Create HTTP server
 const server = createServer(app);
