@@ -48,7 +48,7 @@ export default function setupSocket(server) {
         content,
         createdAt: new Date().toISOString()
       };
-      
+      // moan
       // Emit to recipient if online
       if (onlineUsers.has(recipientId)) {
         console.log(`SOCKET: Emitting message to recipient ${recipientId}`);
