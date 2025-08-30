@@ -20,7 +20,7 @@ import { createAdmin } from './controllers/user.controller.js';
 const app = express();
 app.use(cookieParser());
 
-
+// noman
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(express.json({ limit: '10mb' })); // or higher, e.g. '20mb'
 
