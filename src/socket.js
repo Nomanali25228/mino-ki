@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 export default function setupSocket(server) {
   const io = new Server(server, {
     cors: {
-      origin: process.env.FRONTEND_URL || 'https://delight-spherecom.vercel.app/',
+      origin: process.env.FRONTEND_URL || 'https://delight-spherecom.vercel.app',
       methods: ['GET', 'POST']
     }
   });

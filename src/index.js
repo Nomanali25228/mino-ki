@@ -27,7 +27,7 @@ app.use(express.json({ limit: '10mb' })); // or higher, e.g. '20mb'
 // Simple CORS configuration with PATCH method support
 app.use(cors({
   origin: [
-    'https://shopping-hubcom.vercel.app', 
+    'https://delight-spherecom.vercel.app', 
     
   ],
   credentials: true,
@@ -56,7 +56,7 @@ const server = createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'https://shopping-hubcom.vercel.app',
+      'https://delight-spherecom.vercel.app',
       
     ],
     methods: ['GET', 'POST'],
